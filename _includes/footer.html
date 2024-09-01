@@ -1,0 +1,28 @@
+<footer class="site-footer h-card" style="background-color:#212121">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+            {%- if site.email -%}
+            <li><a style="color:#ffffff;" class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {%- endif -%}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2" style="margin-left:5%;">
+        {%- include social.html -%}
+        <img src="images/tinygetam.png" style="margin-left:25%">
+      </div>
+
+
+      <div class="footer-col footer-col-3" style="float:right; width:30%;" >
+          <p style="color:#ffffff">{{- site.description | escape -}}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
